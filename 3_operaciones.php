@@ -10,26 +10,75 @@
     <h1>Operaciones</h1>
     <?php
     //Operaciones aritmeticos
-    
-    echo (5 % 3)."\n";           // muestra 2
-    echo (5 % -3)."\n";          // muestra 2
-    echo (-5 % 3)."\n";          // muestra -2
-    echo (-5 % -3)."\n";         // muestra -2
-
+    // Suma: +
+    // Resta: -
+    // Mutiplicacion: *
+    // Divición: / 
+    // Modulo: %
+    // Incremento: ++
+    // Decremento: --
+    // Exponente: **
+    $x = 9;
+    echo ("X = ",$x,"<br>");
+    $y = 3;
+    echo ("y = ",$y,"<br>");
+    $z = 5;
+    echo ("z = ",$z,"<br>");
+    $suma = $x + $y;
+    echo ("suma = ",$suma,"<br>");
+    $resta = $x - $z;
+    echo ("resta = ",$resta,"<br>");
+    $multiplicacion = $suma*$resta;
+    echo ("multipicacion = ",$multiplicacion,"<br>")
+    $final = $multiplicacion++;
+    echo("final = ",$final,"<br>");
+    echo ("multiplicacion =",$multiplicacion,"<br>")
     //Operaciones de comparacion
-    // Booleanos y null son comparados siempre coomo bool
-var_dump(1 == TRUE);  // TRUE - same as (bool)1 == TRUE
-var_dump(0 == FALSE); // TRUE - same as (bool)0 == FALSE
-var_dump(100 < TRUE); // FALSE - same as (bool)100 < TRUE
-var_dump(-10 < FALSE);// FALSE - same as (bool)-10 < FALSE
-var_dump(min(-100, -10, NULL, 10, 100)); // NULL - (bool)NULL < (bool)-100 is FALSE < TRUE
-
-
+    // Igual: ==
+    // Identico: ===
+    // Diferente: !=
+    // Menor: <
+    // Mayor: >
+    // Menor o igual: <=
+    // mayor o igual: >=
+    echo "<h1>Operadores de comparacion</h1><br>";
+    $x = 5;
+    $y = 5;
+    echo (5x == $y);
+    echo (5x <= $y);
     //Operaciones logicos
-    
+    // AND o &&: $a && $b es true si $a y $b son verdaderos
+    // OR o ||: $a || $b son verdaderos
+    // XOR: $a XOR $b es True si $a es verdadero o sb es verdadero, pero no los dos
+    // !: !$a es True si $a es false
+    echo "<h1>Operadores logicos</h1><br>"
+    $x = 4;
+    $y = 5;
+
+    if(($x==4) && ($y==5))
+    {
+        print("Estas en lo correcto")
+    }
+    echo"<br>"
+    if(($x==4) && ($y==3))
+    {
+        print("La segunda operacion tambien es correcta")
+    }
 
     //Operaciones de union de cadenas
-
+    echo "<h1>Operadores de union de cadenas</h1><br>"
+    $t = "Ejemplo";
+    $w = 'union';
+    $x = "de";
+    $y = "cadenas";
+    $z = ' ';
+    $resultado1 = $t;
+    $resultado2 = $t.$z.$x.$z.$w.$z.$x.$z.$y;
+    echo '<b><h1>';
+    echo $resultado1;
+    echo "<hr>";
+    echo $resultado2;
+    echo "</b></hr>";
     ?>
 
 </body>
